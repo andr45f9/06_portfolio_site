@@ -42,13 +42,55 @@ p {
 /*--------------------------------------*/
 
 /*Nav bar/burger menu*/
-
-#navbar a {
-  text-decoration: none;
+.fa.fa-bars {
+  font-size: 2rem;
+  color: #fffe9a;
+  margin-left: 1rem;
+  margin-top: 1rem;
 }
 
-#navbar li {
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #b6d6f2;
+}
+
+ul {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
   list-style: none;
+  margin-right: 1rem;
+  margin-top: 1.3rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fffe9a;
+}
+
+/*--------------------------------------*/
+
+/*Frontpage*/
+#frontpage {
+  background-color: #b6d6f2;
+  height: 45rem;
+}
+
+#frontpage_txt {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+}
+
+#frontpage_logo {
+  position: absolute;
+  width: 70%;
+  top: 26%;
+  left: 15%;
 }
 
 /*--------------------------------------*/
@@ -56,8 +98,83 @@ p {
 /*@media*/
 
 @media (min-width: 600px) {
+  .fa.fa-bars {
+    font-size: 2rem;
+  }
+
+  ul {
+    font-size: 22px;
+    gap: 2rem;
+  }
+
+  #frontpage {
+    height: 55rem;
+  }
+
+  #frontpage_txt {
+    top: 15%;
+    width: 90%;
+    left: 5%;
+  }
+
+  #frontpage_logo {
+    width: 65%;
+    top: 29%;
+    left: 17%;
+  }
 }
+/*---------------------------*/
+
+@media (min-width: 800px) {
+  #frontpage_txt {
+    top: 10%;
+    width: 80%;
+    left: 10%;
+  }
+
+  #frontpage_logo {
+    width: 55%;
+    top: 26%;
+    left: 22%;
+  }
+}
+/*---------------------------*/
 
 @media (min-width: 1000px) {
+  .fa.fa-bars {
+    font-size: 2.5rem;
+  }
+
+  ul {
+    font-size: 25px;
+  }
+
+  #frontpage_txt {
+    width: 60%;
+    left: 20%;
+    top: 3%;
+  }
+
+  #frontpage_logo {
+    width: 37%;
+    top: 22%;
+    left: 32%;
+  }
+}
+/*---------------------------*/
+
+@media (min-width: 1200px) {
+  .fa.fa-bars {
+    font-size: 2.7rem;
+  }
+
+  ul {
+    font-size: 30px;
+    gap: 3rem;
+  }
+
+  #frontpage_txt {
+    top: 0%;
+  }
 }
 /*--------------------------------------*/
