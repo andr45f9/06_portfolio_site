@@ -13,6 +13,10 @@ img {
 
 /*Genrelle indstillinger på siden*/
 
+main {
+  background-color: #eaf5ff;
+}
+
 /*--------------------------------------*/
 
 /*Indstilling for Font*/
@@ -38,12 +42,14 @@ h4 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 25px;
+  color: #011640;
 }
 
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 15px;
+  color: #011640;
 }
 /*--------------------------------------*/
 
