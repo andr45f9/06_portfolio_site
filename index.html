@@ -15,12 +15,10 @@
   <body>
     <header>
       <nav class="navbar">
-        <div class="burger_menu">
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>
-        <ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <ul id="navLinks">
           <li><a href="index.html">Forside</a></li>
           <li><a href="#0">Portfolio</a></li>
           <li><a href="#0">Om</a></li>
@@ -35,11 +33,13 @@
         </div>
         <div id="frontpage_logo">
           <img
+            class="rotate"
             src="./portfolio_billeder/animation.svg"
             alt="Roller skate animation"
           />
         </div>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -49,15 +49,19 @@ p {
   margin-top: 1rem;
 }
 
-header .navbar {
+.navbar {
   display: flex;
   justify-content: space-between;
   background-color: #b6d6f2;
 }
 
-ul {
+.navbar #navLinks {
+  display: none;
+}
+
+#navLinks {
   display: flex;
-  justify-content: end;
+  align-content: center;
   gap: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -71,7 +75,21 @@ ul {
   text-decoration: none;
   color: #fffe9a;
 }
+/*--------------------------------------*/
 
+/*animation til forsiden*/
+.rotate {
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 /*--------------------------------------*/
 
 /*Frontpage*/
@@ -88,11 +106,10 @@ ul {
 
 #frontpage_logo {
   position: absolute;
-  width: 70%;
-  top: 26%;
-  left: 15%;
+  width: 80%;
+  top: 21%;
+  left: 10%;
 }
-
 /*--------------------------------------*/
 
 /*@media*/
@@ -102,7 +119,7 @@ ul {
     font-size: 2rem;
   }
 
-  ul {
+  #navLinks {
     font-size: 22px;
     gap: 2rem;
   }
@@ -112,14 +129,14 @@ ul {
   }
 
   #frontpage_txt {
-    top: 15%;
+    top: 5%;
     width: 90%;
     left: 5%;
   }
 
   #frontpage_logo {
     width: 65%;
-    top: 29%;
+    top: 17%;
     left: 17%;
   }
 }
@@ -127,15 +144,14 @@ ul {
 
 @media (min-width: 800px) {
   #frontpage_txt {
-    top: 10%;
     width: 80%;
     left: 10%;
   }
 
   #frontpage_logo {
-    width: 55%;
-    top: 26%;
-    left: 22%;
+    width: 57%;
+    top: 18%;
+    left: 20%;
   }
 }
 /*---------------------------*/
@@ -143,10 +159,12 @@ ul {
 @media (min-width: 1000px) {
   .fa.fa-bars {
     font-size: 2.5rem;
+    margin-left: 2rem;
   }
 
-  ul {
+  #navLinks {
     font-size: 25px;
+    margin-right: 2rem;
   }
 
   #frontpage_txt {
@@ -156,9 +174,9 @@ ul {
   }
 
   #frontpage_logo {
-    width: 37%;
-    top: 22%;
-    left: 32%;
+    width: 43%;
+    top: 15%;
+    left: 28%;
   }
 }
 /*---------------------------*/
@@ -168,7 +186,7 @@ ul {
     font-size: 2.7rem;
   }
 
-  ul {
+  #navLinks {
     font-size: 30px;
     gap: 3rem;
   }
