@@ -19,25 +19,31 @@ img {
 
 h1 {
   font-family: "Pacifico", cursive;
+  font-size: 40px;
+  color: #a3035b;
 }
 
 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  font-size: 35px;
 }
 
 h3 {
   font-family: "Pacifico", cursive;
+  font-size: 30px;
 }
 
 h4 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  font-size: 25px;
 }
 
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  font-size: 15px;
 }
 /*--------------------------------------*/
 
@@ -79,7 +85,7 @@ p {
 
 /*animation til forsiden*/
 .rotate {
-  animation: rotation 5s infinite linear;
+  animation: rotation 4s infinite linear;
 }
 
 @keyframes rotation {
@@ -87,7 +93,7 @@ p {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(359deg);
+    transform: rotate(360deg);
   }
 }
 /*--------------------------------------*/
@@ -106,9 +112,9 @@ p {
 
 #frontpage_logo {
   position: absolute;
-  width: 80%;
-  top: 21%;
-  left: 10%;
+  width: 60%;
+  top: 27%;
+  left: 19%;
 }
 /*--------------------------------------*/
 
@@ -135,9 +141,9 @@ p {
   }
 
   #frontpage_logo {
-    width: 65%;
+    width: 60%;
     top: 17%;
-    left: 17%;
+    left: 19%;
   }
 }
 /*---------------------------*/
@@ -149,9 +155,9 @@ p {
   }
 
   #frontpage_logo {
-    width: 57%;
-    top: 18%;
-    left: 20%;
+    width: 50%;
+    top: 20%;
+    left: 25%;
   }
 }
 /*---------------------------*/
@@ -174,9 +180,9 @@ p {
   }
 
   #frontpage_logo {
-    width: 43%;
-    top: 15%;
-    left: 28%;
+    width: 40%;
+    top: 16%;
+    left: 30%;
   }
 }
 /*---------------------------*/
