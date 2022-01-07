@@ -14,8 +14,64 @@ img {
 
 /*Genrelle indstillinger på siden*/
 
-#portfolio {
+#portfolio_body {
   background-color: #b6d6f2;
+}
+
+#portfolio_main {
+  background-color: #b6d6f2;
+}
+
+/*--------------------------------------*/
+
+/*portfolio siden*/
+
+.tema_site h2 {
+  font-size: 25px;
+  margin: 4rem 0 0.5rem 0;
+  color: #011640;
+}
+
+.tema_site a {
+  text-decoration: none;
+  color: #fffe9a;
+}
+
+.tema_site h3 {
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+
+.tema_site a:hover {
+  color: #dbedfc;
+}
+
+.tema_site {
+  text-align: center;
+}
+
+/*--------------------------------------*/
+
+/*@media*/
+
+@media (min-width: 800px) {
+  .tema_site h2 {
+    font-size: 30px;
+  }
+
+  .tema_site h3 {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .tema_site h2 {
+    font-size: 35px;
+  }
+
+  .tema_site h3 {
+    font-size: 30px;
+  }
 }
 
 /*--------------------------------------*/
