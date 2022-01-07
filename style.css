@@ -17,6 +17,10 @@ main {
   background-color: #eaf5ff;
 }
 
+footer {
+  background-color: #b6d6f2;
+}
+
 /*--------------------------------------*/
 
 /*Indstilling for Font*/
@@ -91,9 +95,22 @@ p {
 }
 /*--------------------------------------*/
 
-/*animation til forsiden*/
+/*animation til forsiden og footer*/
 .rotate {
   animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate_2 {
+  animation: rotation 10s infinite linear;
 }
 
 @keyframes rotation {
@@ -231,6 +248,25 @@ p {
   margin: 1rem 2rem;
 }
 
+.about_socials {
+  text-align: center;
+  margin: 1.5rem 0 1rem 0;
+}
+
+/*--------------------------------------*/
+
+/*footer*/
+
+.footer_logo {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_txt {
+  width: 50%;
+  margin-top: 3rem;
+}
+
 /*--------------------------------------*/
 
 /*@media*/
@@ -259,6 +295,10 @@ p {
     width: 60%;
     top: 17%;
     left: 19%;
+  }
+
+  .footer_txt {
+    width: 40%;
   }
 }
 /*---------------------------*/
@@ -325,6 +365,10 @@ p {
   .about_header h1 {
     margin: 4rem 0 4rem 0;
   }
+
+  .footer_txt {
+    width: 30%;
+  }
 }
 /*---------------------------*/
 
@@ -361,6 +405,11 @@ p {
 
   .about_txt p {
     font-size: 17px;
+  }
+
+  .footer_txt {
+    width: 25%;
+    margin-top: 6rem;
   }
 }
 /*---------------------------*/
