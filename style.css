@@ -21,6 +21,21 @@ footer {
   background-color: #b6d6f2;
 }
 
+#myBtn {
+  /* display: none; */
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99; /* forsikre os at den ikke overlappes af noget */
+  border: solid 2px #b6d6f2;
+  background-color: #fffe9a;
+  color: #b6d6f2;
+  font-size: 20px;
+  cursor: pointer; /* Tilføjer en finger der peger ved hover */
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+}
+
 /*--------------------------------------*/
 
 /*Indstilling for Font*/
