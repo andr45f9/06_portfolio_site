@@ -24,7 +24,7 @@ img {
 
 /*--------------------------------------*/
 
-/*portfolio siden*/
+/*portfolio siden øverstedel*/
 
 .tema_site h2 {
   font-size: 25px;
@@ -52,6 +52,37 @@ img {
 
 /*--------------------------------------*/
 
+/*portfolio siden midter del - tekst*/
+
+.tema_txt {
+  text-align: center;
+}
+
+.tema_txt h3 {
+  font-size: 18px;
+  color: #a3035b;
+  margin: 1rem 0;
+}
+
+.tema_txt p {
+}
+
+/*--------------------------------------*/
+
+/*portfolio siden nederste del - dokumentation*/
+
+.tema_docu img {
+  width: 70%;
+  margin-bottom: 1rem;
+}
+
+.tema_docu h4 {
+  font-size: 17px;
+  margin-top: 1rem;
+}
+
+/*--------------------------------------*/
+
 /*@media*/
 
 @media (min-width: 800px) {
@@ -62,6 +93,36 @@ img {
   .tema_site h3 {
     font-size: 25px;
   }
+
+  .tema_img {
+    margin: 0 2rem;
+  }
+
+  .tema_docu h4 {
+    font-size: 20px;
+  }
+
+  .tema_docu img {
+    width: 60%;
+  }
+
+  .tema_txt h3 {
+    text-align: center;
+  }
+  .tema_txt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    text-align: justify;
+    justify-items: center;
+    margin: 3rem 2rem 5rem 2rem;
+  }
+  .project {
+    grid-column: 1/2;
+  }
+  .process {
+    grid-template-columns: 2/3;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -71,6 +132,18 @@ img {
 
   .tema_site h3 {
     font-size: 30px;
+  }
+
+  .tema_img {
+    margin: 0 3rem;
+  }
+
+  .tema_docu h4 {
+    font-size: 25px;
+  }
+
+  .tema_docu img {
+    width: 50%;
   }
 }
 
