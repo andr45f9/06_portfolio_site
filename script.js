@@ -13,7 +13,7 @@ function myFunction() {
 /* Back to top knap */
 
 //Hent knappen
-mybutton = document.getElementById("myBtn");
+const mybutton = document.getElementById("myBtn");
 
 // Når man scroller ned til 20px fra toppen af, så viser knappen sig
 window.onscroll = function () {
