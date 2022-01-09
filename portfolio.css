@@ -56,6 +56,11 @@ img {
 
 .tema_txt {
   text-align: center;
+  margin: 0 2rem;
+}
+
+.tema_txt p {
+  text-align: justify;
 }
 
 .tema_txt h3 {
