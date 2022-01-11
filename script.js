@@ -12,16 +12,16 @@ function toggleNavigation() {
 
 /* Back to top knap */
 
-//Hent knappen
-const mybutton = document.getElementById("myBtn");
-
 // Når man scroller ned til 20px fra toppen af, så viser knappen sig
 window.onscroll = function () {
   scrollFunction();
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  //Hent knappen
+  const mybutton = document.getElementById("myBtn");
+
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
