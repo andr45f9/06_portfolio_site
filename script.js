@@ -1,12 +1,12 @@
 /* Burger menu */
 
-function myFunction() {
-  const x = document.getElementById("navLinks");
+function toggleNavigation() {
+  const navigation = document.getElementById("navLinks");
 
-  if (x.style.display === "flex") {
-    x.style.display = "none";
+  if (navigation.style.display === "flex") {
+    navigation.style.display = "none";
   } else {
-    x.style.display = "flex";
+    navigation.style.display = "flex";
   }
 }
 
